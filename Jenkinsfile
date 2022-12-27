@@ -11,11 +11,12 @@ pipeline {
                                                echo 'Hello World'
                                                }
                                                }
-                             stage('git clone') {
+                         stage('git clone') {
                                               steps {
                                          git credentialsId: 'github', url: 'https://github.com/ahiresnehal/python-flask-app-kubernetes.git'
                                                         }
                                                         }
+            }
         /*stage('Docker Build and Tag') {
                                               steps {
                                                    //sh 'docker build -t nginxt:latest .' 
@@ -38,6 +39,6 @@ pipeline {
                                                  kubernetesDeploy (configs: 'deploymentservice.yaml', kubeconfigId: 'rancherconfih')
                                                  }
                                                  }
-                                                 }*/
-  }
+                                                 }
+  }*/
   }
