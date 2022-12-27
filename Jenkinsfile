@@ -1,10 +1,10 @@
 pipeline {
-                          /*agent any
+                          agent any
                             environment {  
-                            registry = "docker.io/anjum1234" 
+                            registry = "docker.io/snehalahire123" 
                             registryCredential = 'dockerhub' 
                              dockerImage = ''
-                                                 }*/
+                                                 }
             stages {
                          stage('Hello') {
                                      steps {
@@ -16,7 +16,7 @@ pipeline {
                                          git credentialsId: 'github', url: 'https://github.com/ahiresnehal/python-flask-app-kubernetes.git'
                                                         }
                                                         }
-            }
+            
         /*stage('Docker Build and Tag') {
                                               steps {
                                                    //sh 'docker build -t nginxt:latest .' 
@@ -40,5 +40,5 @@ pipeline {
                                                  }
                                                  }
                                                  }
-  }*/
+  }
   }
