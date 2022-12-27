@@ -13,7 +13,7 @@ pipeline {
                                                }
                              stage('git clone') {
                                               steps {
-                                         git credentialsId: 'github', url: ''
+                                         git credentialsId: 'github', url: 'https://github.com/ahiresnehal/python-flask-app-kubernetes.git'
                                                         }
                                                         }
         /*stage('Docker Build and Tag') {
